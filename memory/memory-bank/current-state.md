@@ -55,3 +55,7 @@ Evidencia:
 3. Extraer logica compartida de endpoints por tipo de negocio.
 4. Mejorar resiliencia frontend con AbortController y errores observables.
 5. Expandir cobertura de pruebas para escenarios de validacion negativa.
+6. Evitar exposicion publica de puertos sensibles de depuracion en entornos compartidos.
+7. Reemplazar el uso de random.seed global por instancias locales deterministicas por request.
+8. Definir y aplicar una convencion unica de idioma y naming para UI, API y codigo.
+9. Mantener documentacion tecnica viva por categorias en cada cambio relevante.
