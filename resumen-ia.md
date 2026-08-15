@@ -265,9 +265,20 @@ Cada error de red debe registrar causa técnica y mostrar mensaje amigable sin o
 Toda llamada en efectos debe tener cancelación para evitar actualización de estado cuando el componente ya no está montado.
 
 10. Convención de idioma y naming:
-Definirel idioma español para textos de UI y mensajes de error, con reglas claras para nombres de rutas, funciones y tipos.
+Definirel idioma español para textos de UI y mensajes de error, y usar idioma inglés para nombres de funciones, archivos, carpetas, interfaces, clases, etc.ç
 
-11. Aplicar una convención única de naming (funciones, componentes, interfaces, clases, archivos y carpetas) y validarla en PR.
+ En React usar las siguientes convenciones de nomenclatura:
+  - PascalCase: componentes React y tipos/interfaces de Typescript
+  - camelCase: hooks y funciones utilitarias 
+  - kebab-case: nombre de carpetas.
+
+En Python usar:
+  - Funciones y variables: snake_case (ej. calcular_precio(), resultado_final).
+  - Archivos y módulos: Usan snake_case en minúsculas y deben ser nombres cortos (ej. procesar_datos.py)  - Carpetas y paquetes: Usan minúsculas pegadas y sin guiones (ej.mipaquete).
+  - Clases: Usan PascalCase (o CapWords), con mayúscula inicial en cada palabra (ej. UsuarioAdministrador).
+
+
+11. Aplicar una convención única de naming (funciones, componentes, interfaces, clases, archivos y carpetas) y validarla en PR.git 
 
 12. Cobertura mínima por cambio:
 Cada cambio funcional en backend o utilidades frontend debe incluir prueba asociada y cubrir caso feliz más al menos un edge case.
